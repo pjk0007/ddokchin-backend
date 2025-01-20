@@ -26,7 +26,7 @@ app.post('/rtc-connect', async (req, res, next) => {
     const body = req.body;
 
     const url = new URL('https://api.openai.com/v1/realtime');
-    url.searchParams.set('model', 'gpt-4o-realtime-preview-2024-12-17');
+    url.searchParams.set('model', 'gpt-4o-mini-realtime-preview-2024-12-17');
     url.searchParams.set('instructions', DEFAULT_INSTRUCTIONS);
     url.searchParams.set('voice', 'sage');
 
